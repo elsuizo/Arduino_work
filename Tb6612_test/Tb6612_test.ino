@@ -54,7 +54,7 @@ void forward();
 void backguard();
 
 void setup(){
-   Serial.begin(9600);
+   Serial.begin(115200);
    pinMode(STBY, OUTPUT);
    pinMode(13, OUTPUT);
    pinMode(PWMA, OUTPUT);
@@ -65,11 +65,9 @@ void setup(){
    pinMode(BIN1, OUTPUT);
    pinMode(BIN2, OUTPUT);
 
-   pinMode(13, OUTPUT);
 }
 
 void loop(){
-
 
    if( Serial.available() )
    {
@@ -108,6 +106,12 @@ void loop(){
       case 'd':
          {
             right();
+            break;
+         }
+      default:
+         {
+            forward();
+            digitalWrite(13,LOW);
             break;
          }
 
