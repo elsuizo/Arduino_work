@@ -43,8 +43,8 @@ int AIN2 = 6; //Direction
 
 //Motor B
 int PWMB = 10; //Speed control
-int BIN1 = 8; //Direction
-int BIN2 = 9; //Direction
+int BIN1 = 8;  //Direction
+int BIN2 = 9;  //Direction
 
 void move(int motor, int speed, int direction);
 void stop();
