@@ -1,12 +1,12 @@
 /* -------------------------------------------------------------------------
-@file Serial_test.ino
+@file Nokia_5110.ino
 
-@date 12/02/17 11:16:14
+@date 03/29/18 20:38:14
 @author Martin Noblia
 @email mnoblia@disroot.org
 
 @brief
-Arduino serial test, para ver si esta andando el puerto serial
+Libreria para el display Nokia 5110
 @detail
 
 Licence:
@@ -31,15 +31,20 @@ You should have received a copy of the GNU General Public License
 #else
    #include "WProgram.h"
 #endif
+
+enum LCD_PIN {
+   LCD_PIN_RES  = 6, /* external reset input */
+   LCD_PIN_SCE  = 7, /* chip enable */
+   LCD_PIN_DC   = 5, /* data/clock mode select */
+   LCD_PIN_SDIN = 4, /* serial data input */
+   LCD_PIN_SCLK = 8, /* serial clock input */
+}
+
 void setup()
 {
-   Serial.begin(115200);
-   Serial.println("A");
-   delay(1000);
+
 }
 
 void loop()
 {
-   Serial.println("B");
-   delay(10);
 }
