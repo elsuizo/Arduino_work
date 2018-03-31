@@ -25,9 +25,12 @@ You should have received a copy of the GNU General Public License
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
+
 #include "lcd_nokia_5110.h"
 
 /* TODO(elsuizo:2018-03-30):
+   - [X] Encontrar el valor adecuado de contraste ---> Creo que esta mejor asi
+      - [ ] Estaria piola hacer un programa de calibracion que vaya recorriendo todos los valores y que con un boton lo pares
    - [ ] Limpiar la libreria con los nombre y comentarios
    - [ ] Ver de agregar mas comandos
    - [ ] Ver como hacer animaciones
@@ -40,12 +43,14 @@ void setup()
    pinMode(LCD_PIN_DC, OUTPUT);
    pinMode(LCD_PIN_SDIN, OUTPUT);
    pinMode(LCD_PIN_SCLK, OUTPUT);
+
    lcd_init();
+
    lcd_clear();
 
 }
 
 void loop()
 {
-   lcd_write("Hello world");
+   lcd_write("Martin Noblia");
 }

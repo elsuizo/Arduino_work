@@ -26,7 +26,7 @@ You should have received a copy of the GNU General Public License
 
 static const byte DICTIONARY[][5] =
 {
- {0x00, 0x00, 0x00, 0x00, 0x00} // 20  
+ {0x00, 0x00, 0x00, 0x00, 0x00} // 20
 ,{0x00, 0x00, 0x5f, 0x00, 0x00} // 21 !
 ,{0x00, 0x07, 0x00, 0x07, 0x00} // 22 "
 ,{0x14, 0x7f, 0x14, 0x7f, 0x14} // 23 #
@@ -195,7 +195,7 @@ void lcd_init(void) {
    /* initialization functions */
    send_command(EXTENDED_FUNCTION_SET); /* use extended functions set */
    send_command(MUX_48_SET); /* set mux rate to 1:48 */
-   send_command(V_OP_SET | 0x3F); /* set the contrast */ /* NOTE(elsuizo:2018-03-30): no ponerlo muy alto porque no se vera nada */
+   send_command(V_OP_SET | 0x2f); /* set the contrast */ /* NOTE(elsuizo:2018-03-30): no ponerlo muy alto porque no se vera nada */
    send_command(BASIC_FUNCTION_SET); /* use extended functions set */
    send_command(NORMAL_MODE_SET); /* enter in NORMAL mode for send data */
 
