@@ -25,26 +25,27 @@ You should have received a copy of the GNU General Public License
 /*-------------------------------------------------------------------------
                               includes
 -------------------------------------------------------------------------*/
-/* mannage the old version of Arduino IDE */
-#if (ARDUINO > 100)
-   #include "Arduino.h"
-#else
-   #include "WProgram.h"
-#endif
+#include "lcd_nokia_5110.h"
 
-enum LCD_PIN {
-   LCD_PIN_RES  = 6, /* external reset input */
-   LCD_PIN_SCE  = 7, /* chip enable */
-   LCD_PIN_DC   = 5, /* data/clock mode select */
-   LCD_PIN_SDIN = 4, /* serial data input */
-   LCD_PIN_SCLK = 8, /* serial clock input */
-}
+/* TODO(elsuizo:2018-03-30):
+   - [ ] Limpiar la libreria con los nombre y comentarios
+   - [ ] Ver de agregar mas comandos
+   - [ ] Ver como hacer animaciones
+ */
 
 void setup()
 {
+   pinMode(LCD_PIN_RES, OUTPUT);
+   pinMode(LCD_PIN_SCE, OUTPUT);
+   pinMode(LCD_PIN_DC, OUTPUT);
+   pinMode(LCD_PIN_SDIN, OUTPUT);
+   pinMode(LCD_PIN_SCLK, OUTPUT);
+   lcd_init();
+   lcd_clear();
 
 }
 
 void loop()
 {
+   lcd_write("Hello world");
 }
