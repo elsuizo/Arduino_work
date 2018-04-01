@@ -30,7 +30,6 @@ You should have received a copy of the GNU General Public License
 
 /* TODO(elsuizo:2018-03-30):
    - [X] Encontrar el valor adecuado de contraste ---> Creo que esta mejor asi
-      - [ ] Estaria piola hacer un programa de calibracion que vaya recorriendo todos los valores y que con un boton lo pares
    - [ ] Limpiar la libreria con los nombre y comentarios
    - [ ] Ver de agregar mas comandos
    - [ ] Ver como hacer animaciones
