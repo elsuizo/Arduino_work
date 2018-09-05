@@ -1,8 +1,11 @@
-# Makefile for compile the arduino board from command line or better from neovim
-ARDUINO_DIR = /home/elsuizo/.arduino_ide
-ARDMK_DIR = /home/elsuizo/.arduino_mk
+# NOTE(elsuizo:2018-04-21): este Makefile lo podemos utilizar
+# con el arduino Makefile (AUR: arduino-mk) teniendo instalado
+# arduino (sudo pacman -S arduino)
+
+ARDUINO = /usr/share/arduino
+ARDUINO_DIR = $(ARDUINO)
+ARDMK_VENDOR = archlinux-arduino
+
 BOARD_TAG = uno
-# ARDUINO_LIBS = Time Ethernet SPI
 
-
-include $(ARDMK_DIR)/Arduino.mk
+include $(ARDUINO)/Arduino.mk
