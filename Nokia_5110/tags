@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+ARDMK_VENDOR	Makefile	/^ARDMK_VENDOR = archlinux-arduino$/;"	m
+ARDUINO	Makefile	/^ARDUINO = \/usr\/share\/arduino$/;"	m
+ARDUINO_DIR	Makefile	/^ARDUINO_DIR = $(ARDUINO)$/;"	m
+BASIC_FUNCTION_SET	lcd_nokia_5110.h	/^   BASIC_FUNCTION_SET      = FUNCTION_SET, \/* set H to low *\/$/;"	e	enum:INTRUCTIONS
+BIAS_SYSTEM_ENABLED_SET	lcd_nokia_5110.h	/^   BIAS_SYSTEM_ENABLED_SET = bit(4), \/* set the bias of voltages bit ready for initialization */;"	e	enum:INTRUCTIONS
+BOARD_TAG	Makefile	/^BOARD_TAG = uno$/;"	m
+DICTIONARY	lcd_nokia_5110.c	/^static const byte DICTIONARY[][5] =$/;"	v	typeref:typename:const byte[][5]	file:
+DISPLAY_CONTROL_SET	lcd_nokia_5110.h	/^   DISPLAY_CONTROL_SET     = bit(3),$/;"	e	enum:INTRUCTIONS
+EXTENDED_FUNCTION_SET	lcd_nokia_5110.h	/^   EXTENDED_FUNCTION_SET   = FUNCTION_SET | bit(0), \/* for set the extendend set of instruction/;"	e	enum:INTRUCTIONS
+FUNCTION_SET	lcd_nokia_5110.h	/^   FUNCTION_SET            = bit(5), \/* set the bit 5 to begins table 1 *\/$/;"	e	enum:INTRUCTIONS
+INTRUCTIONS	lcd_nokia_5110.h	/^enum INTRUCTIONS {$/;"	g
+LCD_PIN	lcd_nokia_5110.h	/^enum LCD_PIN {$/;"	g
+LCD_PIN_DC	lcd_nokia_5110.h	/^   LCD_PIN_DC   = 5, \/* data\/clock mode select *\/$/;"	e	enum:LCD_PIN
+LCD_PIN_RES	lcd_nokia_5110.h	/^   LCD_PIN_RES  = 6, \/* external reset input: warning is active in low mode *\/$/;"	e	enum:LCD_PIN
+LCD_PIN_SCE	lcd_nokia_5110.h	/^   LCD_PIN_SCE  = 7, \/* chip enable: warning is active in low mode *\/$/;"	e	enum:LCD_PIN
+LCD_PIN_SCLK	lcd_nokia_5110.h	/^   LCD_PIN_SCLK = 8, \/* serial clock input *\/$/;"	e	enum:LCD_PIN
+LCD_PIN_SDIN	lcd_nokia_5110.h	/^   LCD_PIN_SDIN = 4, \/* serial data input *\/$/;"	e	enum:LCD_PIN
+MUX_48_SET	lcd_nokia_5110.h	/^   MUX_48_SET              = BIAS_SYSTEM_ENABLED_SET | bit(1) | bit(0),$/;"	e	enum:INTRUCTIONS
+NOKIA_5110_H	lcd_nokia_5110.h	/^#define NOKIA_5110_H$/;"	d
+NORMAL_MODE_SET	lcd_nokia_5110.h	/^   NORMAL_MODE_SET         = DISPLAY_CONTROL_SET | bit(2),$/;"	e	enum:INTRUCTIONS
+SET_X	lcd_nokia_5110.h	/^   SET_X                   = bit(7),$/;"	e	enum:INTRUCTIONS
+SET_Y	lcd_nokia_5110.h	/^   SET_Y                   = bit(6),$/;"	e	enum:INTRUCTIONS
+V_OP_SET	lcd_nokia_5110.h	/^   V_OP_SET                = bit(7), \/* set bits values for initialize the contrast *\/$/;"	e	enum:INTRUCTIONS
+lcd_clear	lcd_nokia_5110.c	/^void lcd_clear(void) {$/;"	f	typeref:typename:void
+lcd_init	lcd_nokia_5110.c	/^void lcd_init(void) {$/;"	f	typeref:typename:void
+lcd_write	lcd_nokia_5110.c	/^void lcd_write(char* message) {$/;"	f	typeref:typename:void
+send_character	lcd_nokia_5110.c	/^void send_character(char c) {$/;"	f	typeref:typename:void
+send_command	lcd_nokia_5110.c	/^static void send_command(uint8_t command) {$/;"	f	typeref:typename:void	file:
+send_data	lcd_nokia_5110.c	/^static void send_data(uint8_t data) {$/;"	f	typeref:typename:void	file:

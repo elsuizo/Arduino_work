@@ -89,7 +89,7 @@ void send_character(char c);
 
 void lcd_clear(void);
 
-void lcd_write(char* message);
+void lcd_write(const char* message);
 
 #ifdef __cplusplus
 }

@@ -161,7 +161,7 @@ void send_character(char c) {
    send_data(0x00);
 }
 
-void lcd_write(char* message) {
+void lcd_write(const char* message) {
    /* go to (0, 0) */
    send_command(SET_Y | 0x00);
    send_command(SET_X | 0x00);
@@ -195,7 +195,8 @@ void lcd_init(void) {
    /* initialization functions */
    send_command(EXTENDED_FUNCTION_SET); /* use extended functions set */
    send_command(MUX_48_SET); /* set mux rate to 1:48 */
-   send_command(V_OP_SET | 0x2f); /* set the contrast */ /* NOTE(elsuizo:2018-03-30): no ponerlo muy alto porque no se vera nada */
+   /* TODO(elsuizo:2019-08-09): hacer una funcion para setear el contraste */
+   send_command(V_OP_SET | 0x3c); /* set the contrast */ /* NOTE(elsuizo:2018-03-30): no ponerlo muy alto porque no se vera nada */
    send_command(BASIC_FUNCTION_SET); /* use extended functions set */
    send_command(NORMAL_MODE_SET); /* enter in NORMAL mode for send data */
 
